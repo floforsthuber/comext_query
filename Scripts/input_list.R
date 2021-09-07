@@ -5,13 +5,12 @@ years <- ifelse(FREQUENCY=='A', paste0(years, '52', years))
 months <- as.character(ifelse(FREQUENCY=='B', c(1:12, 52), c(1:12)))
 months <- str_pad(months, width=2, side="left", pad="0")
 
-range <- c()
+range <- years
 if(FREQUENCY %in% c('M', 'B')){
+    range <- c()
     for(i in years){
         range <- c(range, paste0(i, months))
     }
-} else {
-   range <- years
 }
 
 # Summary list with all input variables used for generating .txt file
