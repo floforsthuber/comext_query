@@ -20,7 +20,7 @@ url_github <- ifelse(branch == 'main', paste0(url_github, '/main'), paste0(url_g
 source(paste0(url_github, '/Setup/Libraries.R'))
 
 # Scripts
-source(paste0(url_github, '/Scripts/input_list.R'))
-source(paste0(url_github, '/Scripts/write_lines.R'))
+source(paste0(url_github, '/Scripts/input_list.R'), local = TRUE)
+source(paste0(url_github, '/Scripts/write_lines.R'), local = TRUE)
 
 }

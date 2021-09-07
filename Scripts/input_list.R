@@ -1,8 +1,6 @@
 
 # Input for PERIOD
-print(10)
 years <- as.character(c(PERIOD[1]:PERIOD[2]))
-print(10)
 years <- ifelse(FREQUENCY=='A', paste0(years, '52', years))
 months <- as.character(ifelse(FREQUENCY=='B', c(1:12, 52), c(1:12)))
 months <- str_pad(months, width=2, side="left", pad="0")
@@ -14,8 +12,6 @@ if(FREQUENCY %in% c('M', 'B')){
         range <- c(range, paste0(i, months))
     }
 }
-
-print(10)
 
 # Summary list with all input variables used for generating .txt file
 input <- list(
