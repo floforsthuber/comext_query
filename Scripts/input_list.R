@@ -1,8 +1,8 @@
 
 # Input for PERIOD
-years <- as.character(c(2005:2020))
-years <- ifelse(FREQUENCY=='A', paste0(years, '52', years)
-months <- as.character(ifelse(FREQUENCY=='B', c(1:12, 52), c(1:12))
+years <- as.character(c(PERIOD[1]:PERIOD[2]))
+years <- ifelse(FREQUENCY=='A', paste0(years, '52', years))
+months <- as.character(ifelse(FREQUENCY=='B', c(1:12, 52), c(1:12)))
 months <- str_pad(months, width=2, side="left", pad="0")
 
 range <- c()
