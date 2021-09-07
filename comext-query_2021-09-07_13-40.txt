@@ -1,0 +1,42 @@
+# Comext query generated on: september 07, 2021
+
+# -----------------------
+# Mandatory Parameters
+# -----------------------
+
+# Dataset id
+DATASET_NAME=
+# Query name and description
+QUERY_NAME=
+
+# Dataset Dimensions
+
+DECLARANT=
+PARTNER=
+PRODUCT=
+FLOW=
+STAT_REGIME=
+PERIOD=
+INDICATORS=
+
+# The dimensions to be displayed as Lines
+IN_LINES=
+# The dimensions to be displayed as Columns
+IN_COLUMNS=
+
+# -----------------------
+# Optional Parameters
+# -----------------------
+
+# Include/Eliminate zeroes in results [ON|OFF]. Default is OFF
+# Specify output format [BAR, COLUMN, CSV, DMP, DSPL, EXCEL, GESMES, Generate table, HTML, HTML_TOC, LINE, MAP, PC_AXIS, PDF, PIE, RTF2, SDMX, SSS, TCSV, TFIX, TSV, XTTable]
+OUTPUT_FORMAT=
+# Activate/Deactivate batch mode [ON|OFF]. Default is OFF
+BATCH=
+# Specify batch output format [CSV, DMP, DSPL, EXCEL, GESMES, Generate table, HTML, HTML_TOC, PC_AXIS, PDF, RTF2, SDMX, SSS, TCSV, TFIX, TSV, XTTable]
+BATCH_OUTPUT_FORMAT=
+# Batch output codes, labels or both: [L|C|B]. Default is B
+BATCH_OUTPUT_LABELS_TYPE=B
+# Activate/Deactivate dataset updated notification [ON|OFF]. Default is OFF
+NOTIFY_ON_UPDATE=OFF
+
