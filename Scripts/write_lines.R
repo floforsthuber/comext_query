@@ -3,7 +3,7 @@
 setwd(dir[2])
 
 # Create text for the .txt file
-text <- paste0(
+query_text <- paste0(
 '# Comext query generated on: ', format(Sys.time(), "%B %d, %Y at %H:%M"), '\n\n',
 '# -----------------------', '\n',
 '# Mandatory Parameters', '\n',
@@ -41,4 +41,4 @@ ifelse(TYPE %in% c('HS', 'CN'), paste0('STAT_REGIME=', input[['TYPE']], '\n'), '
 )
 
 # Creates file "comext-query_DATE_TIME.txt" in todays folder
-writeLines(a, con=paste0('comext-query_', format(Sys.time(), "%Y-%m-%d_%H-%M"), '.txt'))
+writeLines(query_text, con=paste0('comext-query_', format(Sys.time(), "%Y-%m-%d_%H-%M"), '.txt'))
