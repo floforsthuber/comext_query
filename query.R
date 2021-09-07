@@ -13,7 +13,7 @@ for(i in dir){
 }
 
 # Callilng a development branch
-url_git <- 'https://raw.githubusercontent.com/forsthuber92/comext_query'
+url_github <- 'https://raw.githubusercontent.com/forsthuber92/comext_query'
 url_github <- ifelse(branch == 'main', paste0(url_github, '/main'), paste0(url_github, '/', branch))
 
 # Setup
