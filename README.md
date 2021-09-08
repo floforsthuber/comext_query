@@ -19,19 +19,23 @@ query(
     DATASET_NAME = 'DS-045409',                 # the unique identification code for the dataset you would like to query (string)
     QUERY_NAME = 'CN8_2020_QUERY',              # if not specified it uses the DATASET_NAME (string)
     REPORTER = c('AT', 'EU27_2020'),            # Eurostat country codes (string)
-    PARTNER = c('BE', 'EU27_2020'),             # Eurostat country codes (string)
+    PARTNER = c('BE', EU27_2020_EXTRA'),        # Eurostat country codes (string)
     PRODUCT = c('01', '02'),                    # products codes (string or integer)
     FLOW = c(1, 2),                             # flow codes [imports = 1, exports = 2]
     TYPE = 'CN',                                # type of dataset ['HS', 'CN' or 'SITC'] (string)
     PERIOD = c(2020, 2021),                     # start and end year (integers!) 
     FREQUENCY = c('A'),                         # frequency of observation [annually = A, monthly = M, both = B] (string)
-    INDICATORS = c('VALUE_1000EURO', 'QUANTITY_TON', 'SUP_QUANTITY'), # Eurostat indicator variables (string)
+    INDICATORS = c('VALUE_IN_EUROS', 'QUANTITY_IN_100KG'), # Eurostat indicator variables (string)
     ROW = 'REPORTER',                           # dimension displayed on rows ['REPORTER' or 'PARTNER'] (string)
     OUTPUT_FORMAT = 'CSV',                      # query output format [CSV, DMP, DSPL, EXCEL, HTML, PDF, TCSV...] (string)
     BATCH = 'ON',                               # activate/deactivate batch mode [ON/OFF] (string)
     LABELS = 'B'                                # labels of variables [code = C, name = L, both = B] (string)
 )
 ```
-This will create a .txt file in a folder named after today's date within the overall folder "comext_query" on your desktop.
+This will create a ".properties" file (open with text editor) in a folder named after today's date within the overall folder "comext_query" on your desktop.
 
-Simply open the file with the Comext text query tool and the download should start. Enjoy!
+Simply open the file with the Comext text query tool and the download should start.
+
+You can see the progress of your download under "Batch jobs" and download the output under "Completed Works".
+
+Enjoy!
