@@ -21,7 +21,7 @@ input <- list(
     PARTNER = PARTNER,
     PRODUCT = PRODUCT,
     FLOW = FLOW,
-    STAT_REGIME = ifelse(TYPE == 'HS' || TYPE == 'CN', 'NORMAL', ''),
+    STAT_REGIME = ifelse(TYPE != 'SITC', 'NORMAL', ''),
     PERIOD = range,
     INDICATORS = INDICATORS,
     IN_LINES = ROW,
