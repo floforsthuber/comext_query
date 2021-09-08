@@ -19,7 +19,7 @@ query(
     DATASET_NAME = 'DS-045409',                 # the unique identification code for the dataset you would like to query (string)
     QUERY_NAME = 'CN8_2020_QUERY',              # if not specified it uses the DATASET_NAME (string)
     REPORTER = c('AT', 'EU27_2020'),            # Eurostat country codes (string)
-    PARTNER = c('BE', EU27_2020_EXTRA'),        # Eurostat country codes (string)
+    PARTNER = c('BE', 'EU27_2020_EXTRA'),       # Eurostat country codes (string)
     PRODUCT = c('01', '02'),                    # products codes (string or integer)
     FLOW = c(1, 2),                             # flow codes [imports = 1, exports = 2]
     TYPE = 'CN',                                # type of dataset ['HS', 'CN' or 'SITC'] (string)
