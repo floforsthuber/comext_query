@@ -17,7 +17,7 @@ query_text <- paste0(
 'PARTNER=', paste(input[['PARTNER']], collapse=','), '\n',
 'PRODUCT=', paste(input[['PRODUCT']], collapse=','), '\n',
 'FLOW=', paste(input[['FLOW']], collapse=','), '\n',
-ifelse(TYPE %in% c('HS', 'CN'), paste0('STAT_REGIME=', input[['STAT_REGIME']], '\n'), ''),
+ifelse(TYPE != 'SITC', paste0('STAT_REGIME=', input[['STAT_REGIME']], '\n'), ''),
 'PERIOD=', paste(input[['PERIOD']], collapse=','), '\n',
 'INDICATORS=', paste(input[['INDICATORS']], collapse=','), '\n\n',
 '# The dimensions to be displayed as Lines', '\n',
