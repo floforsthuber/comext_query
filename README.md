@@ -1,10 +1,10 @@
 # Comext Text Query
 
-Project owner(s): Florian Forsthuber (*flo.forsthuber@kuleuven.be*)
+**Project owner(s):** Florian Forsthuber (*flo.forsthuber@kuleuven.be*)
 
-Project outline: *small R based program to facilitate text queries for [Comext](http://epp.eurostat.ec.europa.eu/newxtweb/) (EU international trade data)*
+**Project outline:** *small R based program to facilitate text queries for [Comext](http://epp.eurostat.ec.europa.eu/newxtweb/) (EU international trade data)*
 
-Project status: *early development (operational for the following datasets: DS-045409, DS-058342, DS-018995, DS-059071, i.e. HS2-6, CN8 and SITC)*
+**Project status:** *early development (operational for the following datasets: DS-045409, DS-058342, DS-018995, DS-059071, i.e. HS2-6, CN8 and SITC)*
 
 **To perform a [Comext](http://epp.eurostat.ec.europa.eu/newxtweb/) text query you require an account with Eurostat!**
 
@@ -41,8 +41,8 @@ You can see the progress of your download under "Batch jobs" and download the ou
 
 Enjoy!
 
-## Work to be done
+## Future Work
 
 - *add more datasets:* in particular BEC
 - *make switching between datasets easier:* automatic adjustments, problem in the naming convention of Eurostat (different indicators variable names CN8 vs SITC)
-- *write in Julia for practice*
+- *write the same program in Julia for practice*
