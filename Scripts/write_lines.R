@@ -41,4 +41,4 @@ ifelse(TYPE != 'SITC', paste0('STAT_REGIME=', input[['STAT_REGIME']], '\n'), '')
 )
 
 # Creates file "comext-query_DATE_TIME.txt" in todays folder
-writeLines(query_text, con=paste0('comext-query_', format(Sys.time(), "%Y-%m-%d_%H-%M"), '.txt'))
+writeLines(query_text, con=paste0('comext-query_', format(Sys.time(), "%Y-%m-%d_%H-%M"), '.properties'))
