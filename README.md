@@ -19,23 +19,25 @@ and correctly specify the input arguments (*see example below*).
 query(
     DATASET_NAME = 'DS-045409',                 # the unique identification code for the dataset you would like to query (string)
     QUERY_NAME = 'CN8_2020_QUERY',              # if not specified it uses the DATASET_NAME (string)
-    REPORTER = c('AT', 'EU27_2020'),            # Eurostat country codes (string)
-    PARTNER = c('BE', 'EU27_2020_EXTRA'),       # Eurostat country codes (string)
-    PRODUCT = c('01', '02'),                    # products codes (string or integer)
-    FLOW = c(1, 2),                             # flow codes [imports = 1, exports = 2]
+    REPORTER = c('AT', 'EU27_2020'),            # Eurostat country codes (strings)
+    PARTNER = c('BE', 'EU27_2020_EXTRA'),       # Eurostat country codes (strings)
+    PRODUCT = c('01', '02'),                    # products codes (strings or integers)
+    FLOW = c(1, 2),                             # flow codes [imports = 1, exports = 2] (strings or integers)
     TYPE = 'CN',                                # type of dataset ['HS', 'CN' or 'SITC'] (string)
     PERIOD = c(2020, 2021),                     # start and end year (integers!) 
     FREQUENCY = c('A'),                         # frequency of observation [annually = A, monthly = M, both = B] (string)
-    INDICATORS = c('VALUE_IN_EUROS', 'QUANTITY_IN_100KG'), # Eurostat indicator variables (string)
+    INDICATORS = c('VALUE_IN_EUROS', 'QUANTITY_IN_100KG'), # Eurostat indicator variables (strings)
     ROW = 'REPORTER',                           # dimension displayed on rows ['REPORTER' or 'PARTNER'] (string)
-    OUTPUT_FORMAT = 'CSV',                      # query output format [CSV, DMP, DSPL, EXCEL, HTML, PDF, TCSV...] (string)
+    OUTPUT_FORMAT = 'CSV',                      # query output format [CSV, DMP, DSPL, EXCEL, HTML, PDF, TCSV...] (strings)
     BATCH = 'ON',                               # activate/deactivate batch mode [ON/OFF] (string)
     LABELS = 'B'                                # labels of variables [code = C, name = L, both = B] (string)
 )
 ```
-This will create a ".properties" file (open with text editor) in a folder named after today's date within the overall folder "comext_query" on your desktop.
+The indicator **(string)** simply means that the function argument needs to be specified with (single or double) quotation marks, in contrast to **(integers)** which need to be inserted without quotation marks.
 
-Simply open the file with the Comext text query tool and the download should start.
+Running the correctly specified *query function* will create a ".properties" file (can be opened with any text editor) in a folder named after today's date within the overall folder "comext_query" on your desktop, i.e. `C:/Users/YOUR_USERNAME/Desktop/comext_query`.
+
+Simply open the file with the Comext text query tool and the download should start. If there are misspecifications *Comext* will point them out and you can perform some manual changes within the Comext edtior.
 
 You can see the progress of your download under "Batch jobs" and download the output under "Completed Works".
 
